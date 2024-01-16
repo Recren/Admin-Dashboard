@@ -33,13 +33,14 @@ label {
 input {
   background-color: rgb(226, 232, 240);
   border: none;
-  width: 80%;
+  width: 60%;
+  min-width: 100px;
+  max-width: 400px;
   height: 25px;
   border-radius: 10px;
-  margin-top: 12.5px;
 }
 
-.profile {
+.small-profile {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr 1fr;
   align-self: center;
@@ -63,6 +64,70 @@ input {
   margin-top: 11px;
 }
 
+.search {
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+}
+
 .name {
   justify-self: start;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bottom-row {
+  display: grid;
+  align-self: center;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 30px;
+}
+
+.big-profile {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  align-self: center;
+  margin-right: 30px;
+  gap: 10px;
+}
+.big-profile .avatar {
+  width: 60px;
+  height: 60px;
+  justify-self: end;
+}
+
+.greeting-textBox {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.greeting-textBox p {
+  margin: 0;
+}
+
+.content-options {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border-radius: 20px;
+  height: 35px;
+  width: 80px;
+  background-color: rgb(25, 146, 212);
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+button:hover {
+  transform: scale(1.1);
 }
